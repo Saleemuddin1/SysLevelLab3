@@ -1,9 +1,10 @@
 #!/bin/bash
+#program converts knuts to string
 awk '{
+WholeNumber =$0;
 integerVal = "";
 negVal = "-";
 seperator = "/";
-WholeNumber = $0;
 posOrNeg = substr (WholeNumber,1,1);
 gsub("-","", WholeNumber);
 TotalVal = 23*17;

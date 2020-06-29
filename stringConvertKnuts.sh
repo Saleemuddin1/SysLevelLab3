@@ -1,12 +1,14 @@
 #!/bin/bash
+#program converts String into Absolute Number of Knuts
 awk '{
+WholeNumber = $0;
 integerValue = "";
-charHolder = substr($0,1,1);
+charHolder = substr(WholeNumber,1,1);
 signVal = "-";
 if (charHolder == signVal){
 integerValue = signVal};
-gsub("-", "", $0);
-split($0, value, "/");
+gsub("-", "", WholeNumber);
+split(WholeNumber, value, "/");
 valueA = value[1];
 valueB = value[2];
 valueC = value[3];
