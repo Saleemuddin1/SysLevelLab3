@@ -7,7 +7,7 @@ charHolder = substr(WholeNumber,1,1);
 signVal = "-";
 if (charHolder == signVal){
 integerValue = signVal};
-gsub("-", "", WholeNumber);
+gsub(signVal, "", WholeNumber);
 split(WholeNumber, value, "/");
 valueA = value[1];
 valueB = value[2];

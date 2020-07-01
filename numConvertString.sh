@@ -6,7 +6,7 @@ integerVal = "";
 negVal = "-";
 seperator = "/";
 posOrNeg = substr (WholeNumber,1,1);
-gsub("-","", WholeNumber);
+gsub(negVal,"", WholeNumber);
 TotalVal = 23*17;
 intValofGals = int (WholeNumber/TotalVal);
 intValofSickles = int((WholeNumber%TotalVal)/17);
